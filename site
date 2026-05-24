@@ -67,6 +67,15 @@
       margin:0 0 10px;
       letter-spacing:0.01em;
     }
+    h2 a{
+      color:var(--text);
+      text-decoration:none;
+    }
+    h2 a:hover{
+      text-decoration:underline;
+      text-underline-offset:3px;
+      text-decoration-thickness:1px;
+    }
     ul{
       list-style:none;
       padding:0;
@@ -94,6 +103,7 @@
     <header>
       <h1>Your Name</h1>
       <nav>
+        <a href="#index">Index</a>
         <a href="#climate">Climate</a>
         <a href="#musings">Short musings</a>
         <a href="#projects">Other projects</a>
@@ -108,8 +118,20 @@
       One-line description of what you’re working on.
     </p>
 
+    <section id="index">
+      <h2><a href="#index">Index</a></h2>
+      <ul>
+        <li><a href="#climate">Climate</a></li>
+        <li><a href="#musings">Short musings</a></li>
+        <li><a href="#projects">Other projects</a></li>
+        <li><a href="#library">Library</a></li>
+      </ul>
+    </section>
+
+    <hr />
+
     <section id="climate">
-      <h2>Climate</h2>
+      <h2><a href="#climate">Climate</a></h2>
       <ul>
         <li>
           <a href="https://example.com/your-article">Your article title</a>
@@ -125,7 +147,7 @@
     <hr />
 
     <section id="musings">
-      <h2>Short musings</h2>
+      <h2><a href="#musings">Short musings</a></h2>
       <ul>
         <li><a href="https://example.com/post">A short post title</a> <span class="meta">(May 2026)</span></li>
         <li><a href="https://example.com/post2">Another short post</a> <span class="meta">(Jan 2026)</span></li>
@@ -135,7 +157,7 @@
     <hr />
 
     <section id="projects">
-      <h2>Other projects</h2>
+      <h2><a href="#projects">Other projects</a></h2>
       <ul>
         <li><a href="https://example.com/project">Project name</a> <span class="meta">(2024–)</span></li>
         <li><a href="https://example.com/project2">Project name</a> <span class="meta">(2021–)</span></li>
@@ -145,7 +167,7 @@
     <hr />
 
     <section id="library">
-      <h2>Library</h2>
+      <h2><a href="#library">Library</a></h2>
       <ul>
         <li><a href="/books.html">Books</a> <span class="meta">(2019–2026)</span></li>
         <li><a href="/index.html">Index</a></li>

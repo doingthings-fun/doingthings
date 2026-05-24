@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name</title>
+  <meta name="description" content="Your short description." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --muted:#555555;
+      --link:#111111;
+      --rule:#e6e6e6;
+      --max: 680px;
+      --font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--font);
+      line-height:1.45;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    main{
+      max-width:var(--max);
+      padding:72px 20px 96px;
+      margin:0 auto;
+    }
+    header{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    h1{
+      font-size:40px;
+      font-weight:600;
+      letter-spacing:-0.02em;
+      margin:0;
+    }
+    nav a{
+      margin-left:12px;
+      color:var(--muted);
+      text-decoration:none;
+      font-size:14px;
+    }
+    nav a:hover{ color:var(--text); text-decoration:underline; }
+    .intro{
+      color:var(--muted);
+      font-size:16px;
+      margin:0 0 26px;
+    }
+    .intro a{ color:var(--text); }
+    hr{
+      border:0;
+      border-top:1px solid var(--rule);
+      margin:28px 0;
+    }
+    h2{
+      font-size:16px;
+      font-weight:700;
+      margin:0 0 10px;
+      letter-spacing:0.01em;
+    }
+    ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    li{ margin:8px 0; }
+    a{
+      color:var(--link);
+      text-underline-offset:3px;
+      text-decoration-thickness:1px;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+    }
+    footer{
+      margin-top:48px;
+      color:var(--muted);
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Your Name</h1>
+      <nav>
+        <a href="#climate">Climate</a>
+        <a href="#musings">Short musings</a>
+        <a href="#projects">Other projects</a>
+        <a href="#library">Library</a>
+      </nav>
+    </header>
+
+    <p class="intro">
+      <a href="https://twitter.com/yourhandle">Twitter</a> |
+      <a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a> |
+      <a href="mailto:you@email.com">you@email.com</a>.
+      One-line description of what you’re working on.
+    </p>
+
+    <section id="climate">
+      <h2>Climate</h2>
+      <ul>
+        <li>
+          <a href="https://example.com/your-article">Your article title</a>
+          <span class="meta">(Dec 2024)</span>
+        </li>
+        <li>
+          <a href="https://example.com/another-article">Another piece</a>
+          <span class="meta">(Oct 2024)</span>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="musings">
+      <h2>Short musings</h2>
+      <ul>
+        <li><a href="https://example.com/post">A short post title</a> <span class="meta">(May 2026)</span></li>
+        <li><a href="https://example.com/post2">Another short post</a> <span class="meta">(Jan 2026)</span></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="projects">
+      <h2>Other projects</h2>
+      <ul>
+        <li><a href="https://example.com/project">Project name</a> <span class="meta">(2024–)</span></li>
+        <li><a href="https://example.com/project2">Project name</a> <span class="meta">(2021–)</span></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="library">
+      <h2>Library</h2>
+      <ul>
+        <li><a href="/books.html">Books</a> <span class="meta">(2019–2026)</span></li>
+        <li><a href="/index.html">Index</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
